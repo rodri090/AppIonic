@@ -7,17 +7,17 @@ import { UsuariosPage } from'../usuarios/usuarios';
   templateUrl: 'ingreso.html',
 })
 export class IngresoPage {
-
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad IngresoPage');
+  
+    }
+    usuario(){
+      this.navCtrl.push(UsuariosPage);
+    }
   }
 
-  usuario(){
-    this.navCtrl.push(UsuariosPage);
-}
+  
 
-
-}

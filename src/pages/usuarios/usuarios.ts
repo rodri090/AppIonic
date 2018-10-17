@@ -1,13 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
-
-
-/**
- * Generated class for the UsuariosPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { Component,} from '@angular/core';
+import { IonicPage, NavController,NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -16,19 +8,11 @@ import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angu
 })
 export class UsuariosPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public myModal:ModalController ) {
+  constructor(public navCtrl: NavController, public navParams: NavParams ) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad UsuariosPage');
   }
-  showmodal(){
-    const mydata= {
-      name:"jose",
-      number:"123"
-    };
-    const modal=this.myModal.create('ModalPage',{data:mydata})
-    modal.present();
-    
-  }
+  
 }
