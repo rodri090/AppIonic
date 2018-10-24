@@ -1,11 +1,13 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Dashboard Ingreso</ion-title>
-  </ion-navbar>
-</ion-header>
+    <ion-navbar>
+      <button>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title text-center>Ingreso</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+ 
 
 <ion-content padding style="background-image:url('https://c1.staticflickr.com/4/3402/3265753415_59bdd1d97f.jpg; background-repeat: no-repeat;')" >
     <ion-item>
@@ -18,11 +20,10 @@
           <ion-input type="password"></ion-input>
         </ion-item>
         
-         <ion-tabs #myTabs>
-          <ion-tab tabIcon="settings" tabTitle="Settings" [root]="tab1"></ion-tab>
-          <ion-tab tabIcon="person" tabTitle="Profile" [root]="tab2"></ion-tab>
-        </ion-tabs>
+         
         <div>
           <button block ion-button (click)="usuario()">INICIAR SESIÓN</button>
          </div> 
+         <button ion-button block menuToggle>Toggle Menu</button>
 </ion-content>
+

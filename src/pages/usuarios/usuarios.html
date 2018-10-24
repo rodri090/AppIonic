@@ -1,14 +1,11 @@
-
 <ion-header>
+
   <ion-navbar>
-      <button ion-button menuToggle>
-          <ion-icon name="menu"></ion-icon>
-        </button>
     <ion-title>Usuarios</ion-title>
   </ion-navbar>
+
 </ion-header>
- 
- 
+
 <ion-content padding>
  
 </ion-content>
@@ -34,6 +31,9 @@
 
   </ion-list>
 
+  <div padding>
+    <button block ion-button (click)="presentActionSheet()">Editar Usuarios</button>
+  </div>
 
 </ion-content>
 

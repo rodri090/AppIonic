@@ -8,15 +8,18 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { RegistroPage } from '../pages/registro/registro';
 import { IngresoPage } from '../pages/ingreso/ingreso';
-import { UsuariosPage} from '../pages/usuarios/usuarios';
-
+import { UsuariosPage } from '../pages/usuarios/usuarios';
+import{ VendedorPage } from '../pages/vendedor/vendedor';
+import {DatosEmpresaPage} from '../pages/datos-empresa/datos-empresa';
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     RegistroPage,
     IngresoPage,
-    UsuariosPage
+    UsuariosPage,
+    VendedorPage,
+    DatosEmpresaPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,9 @@ import { UsuariosPage} from '../pages/usuarios/usuarios';
     HomePage,
     RegistroPage,
     IngresoPage,
-    UsuariosPage
+    UsuariosPage,
+    VendedorPage,
+    DatosEmpresaPage
   ],
   providers: [
     StatusBar,
