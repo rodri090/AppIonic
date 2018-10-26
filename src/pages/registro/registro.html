@@ -11,7 +11,7 @@
   
   <p>Registrate via Red social</p>
   <div class="logos" text-center>
-  <ion-icon name="logo-facebook"></ion-icon>
+  <ion-icon  color="danger" name="logo-facebook"></ion-icon>
   <p>o</p>
   <ion-icon name="logo-google"></ion-icon>
   </div>
@@ -21,26 +21,31 @@
     <ion-list>
 
         <ion-item>
+          <ion-icon name="person" item-start></ion-icon>
           <ion-label>Nombre:</ion-label>
           <ion-input type="text"></ion-input>
         </ion-item>
 
         <ion-item>
+          <ion-icon name="person" item-start></ion-icon>
           <ion-label>Apellido:</ion-label>
           <ion-input type="text"></ion-input>
         </ion-item>
 
         <ion-item>
+            <ion-icon name="person" item-start></ion-icon>
             <ion-label>Nombre de Usuario:</ion-label>
             <ion-input type="text"></ion-input>
           </ion-item>
 
          <ion-item>
+            <ion-icon name="mail" item-start></ion-icon>
           <ion-label>Email:</ion-label>
           <ion-input type="text"></ion-input>
         </ion-item>         
         
         <ion-item>
+          <ion-icon name="eye" item-start></ion-icon>
           <ion-label>Password:</ion-label>
           <ion-input type="password"></ion-input>
         </ion-item>
@@ -60,7 +65,7 @@
       </div>
       
       <div padding>
-        <button block ion-button>Registrar</button>
+        <button block ion-button (click)=IngresoP()>Registrar</button>
       </div>
       <div padding>
           <button block ion-button (click)="RegistroVe()">Registrar como Vendedor </button>

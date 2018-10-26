@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
 import { VendedorPage } from '../vendedor/vendedor';
+import { ProductosPage} from '../productos/productos';
+
 
 
 
@@ -16,6 +18,9 @@ export class RegistroPage {
   }
  RegistroVe(){
   this.navCtrl.push(VendedorPage)
+ }
+ IngresoP(){
+  this.navCtrl.push(ProductosPage);
  }
 }
 

@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CategoriaPage} from '../categoria/categoria';
 
-/**
- * Generated class for the DatosEmpresaPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -22,4 +17,7 @@ export class DatosEmpresaPage {
     console.log('ionViewDidLoad DatosEmpresaPage');
   }
 
+   Subir() {
+    this.navCtrl.push(CategoriaPage);
+    }
 }

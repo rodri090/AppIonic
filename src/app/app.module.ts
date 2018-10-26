@@ -9,8 +9,11 @@ import { HomePage } from '../pages/home/home';
 import { RegistroPage } from '../pages/registro/registro';
 import { IngresoPage } from '../pages/ingreso/ingreso';
 import { UsuariosPage } from '../pages/usuarios/usuarios';
-import{ VendedorPage } from '../pages/vendedor/vendedor';
-import {DatosEmpresaPage} from '../pages/datos-empresa/datos-empresa';
+import { VendedorPage } from '../pages/vendedor/vendedor';
+import { DatosEmpresaPage} from '../pages/datos-empresa/datos-empresa';
+import { CategoriaPage } from '../pages/categoria/categoria';
+import { ListPage} from  '../pages/list/list';
+import {ProductosPage } from '../pages/productos/productos';
 @NgModule({
   declarations: [
     MyApp,
@@ -19,7 +22,10 @@ import {DatosEmpresaPage} from '../pages/datos-empresa/datos-empresa';
     IngresoPage,
     UsuariosPage,
     VendedorPage,
-    DatosEmpresaPage
+    DatosEmpresaPage,
+    CategoriaPage,
+    ListPage,
+    ProductosPage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +39,10 @@ import {DatosEmpresaPage} from '../pages/datos-empresa/datos-empresa';
     IngresoPage,
     UsuariosPage,
     VendedorPage,
-    DatosEmpresaPage
+    DatosEmpresaPage,
+    CategoriaPage,
+    ListPage,
+    ProductosPage
   ],
   providers: [
     StatusBar,

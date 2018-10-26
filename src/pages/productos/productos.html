@@ -1,0 +1,54 @@
+<!--
+  Generated template for the ProductosPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>productos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-card *ngFor="let item of productos">
+  
+        <img src="item.Imagen"/>
+    
+        <ion-card-content>
+          <ion-card-title text-center>
+            {{item.titulo}}
+          </ion-card-title>
+          <p>
+            Descripcion:{{item.descripcion}} <br>
+            precio:{{item.precio}}<br>
+          </p>
+        </ion-card-content>
+    
+        <ion-row no-padding>
+          <ion-col>
+            <button ion-button clear small color="danger" icon-start>
+              <ion-icon name='pin'></ion-icon>
+            ver ubicacion
+            </button>
+          </ion-col>
+          <ion-col text-center>
+            <button ion-button clear small color="danger" icon-start>
+              <ion-icon name='star'></ion-icon>
+             Favorito
+            </button>
+          </ion-col>
+          <ion-col text-right>
+            <button ion-button clear small color="danger" icon-start>
+              <ion-icon name='cart'></ion-icon>
+              Comprar
+            </button>
+          </ion-col>
+        </ion-row>
+    
+      </ion-card>
+
+</ion-content>
