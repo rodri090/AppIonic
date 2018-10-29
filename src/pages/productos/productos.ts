@@ -16,14 +16,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class ProductosPage {
   producto:any={
     titulo:"Cosmetico",
-    imagen:"assets/img/zapatos.jpg",
+    imagen:"/assets/imgs/productos.jpg",
     descripcion:"hermosos zapatos ideales para ti",
     precio:100,
   }
     productos:any[]=[
       {
     titulo:"Cosmetico",
-    imagen:"assets/img/zapatos.jpg",
+    imagen:"../assets/imgs/coca-cola.jpg",
     descripcion:"hermosos zapatos ideales para ti",
     precio:100,
       },{

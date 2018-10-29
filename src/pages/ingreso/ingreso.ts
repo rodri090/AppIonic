@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import {  MenuController, IonicPage, NavController } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import {  MenuController, IonicPage, NavController,NavParams  } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
 import { UsuariosPage } from'../usuarios/usuarios';
 import { VendedorPage } from'../vendedor/vendedor';
 @IonicPage()
@@ -9,8 +10,9 @@ import { VendedorPage } from'../vendedor/vendedor';
   
 })
 export class IngresoPage {
-  
-  constructor(public navCtrl: NavController, public menuCtrl:MenuController) {
+  @ViewChild('username') user;
+  @ViewChild('password') password;
+  constructor(public navCtrl: NavController, public menuCtrl:MenuController,public navParams: NavParams, public alertCtrl: AlertController) {
   
   }
   activarMenuPage2() {
@@ -33,11 +35,24 @@ export class IngresoPage {
     console.log('ionViewDidLoad IngresoPage');
   
     }
-    usuario(){
-      this.navCtrl.push(UsuariosPage);
-    }
+    //usuario(){
+    //  this.navCtrl.push(UsuariosPage);
+    //}
     administrador(){
       this.navCtrl.push(VendedorPage);
+    }
+
+    login(){
+      if(this.user.value=="jose"&& this.password.value=="1234"){
+        this.navCtrl.push(UsuariosPage);
+      }else{
+        let alert=this.alertCtrl.create({
+          title:'Datos incorrectos',
+          subTitle:'los datos ingresados son incorrectos.',
+          buttons:['OK']
+        });
+        alert.present();
+      }
     }
 
   }

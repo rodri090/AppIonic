@@ -23,31 +23,31 @@
         <ion-item>
           <ion-icon name="person" item-start></ion-icon>
           <ion-label>Nombre:</ion-label>
-          <ion-input type="text"></ion-input>
+          <ion-input type="text"[(ngModel)]="nuevoRegistro.Nombre"></ion-input>
         </ion-item>
 
         <ion-item>
           <ion-icon name="person" item-start></ion-icon>
           <ion-label>Apellido:</ion-label>
-          <ion-input type="text"></ion-input>
+          <ion-input type="text"[(ngModel)]="nuevoRegistro.Apellido"></ion-input>
         </ion-item>
 
         <ion-item>
             <ion-icon name="person" item-start></ion-icon>
             <ion-label>Nombre de Usuario:</ion-label>
-            <ion-input type="text"></ion-input>
+            <ion-input type="text"[(ngModel)]="nuevoRegistro.Usuario"></ion-input>
           </ion-item>
 
          <ion-item>
             <ion-icon name="mail" item-start></ion-icon>
           <ion-label>Email:</ion-label>
-          <ion-input type="text"></ion-input>
+          <ion-input type="text" [(ngModel)]="nuevoRegistro.Email"></ion-input>
         </ion-item>         
         
         <ion-item>
           <ion-icon name="eye" item-start></ion-icon>
           <ion-label>Password:</ion-label>
-          <ion-input type="password"></ion-input>
+          <ion-input type="password"[(ngModel)]="nuevoRegistro.Password"></ion-input>
         </ion-item>
       
       </ion-list>
@@ -65,12 +65,18 @@
       </div>
       
       <div padding>
-        <button block ion-button (click)=IngresoP()>Registrar</button>
+        <button block ion-button (click)="Registrar()">Registrar</button>
       </div>
       <div padding>
           <button block ion-button (click)="RegistroVe()">Registrar como Vendedor </button>
         </div>
         
-      
+        <ion-item *ngFor="let item of Registros">
+            Nombre: {{item.Nombre}}<br/>
+            Apellido: {{item.Apellido}} <br/>
+            Usuario: {{item.Usuario}}<br/>
+            Email: {{item.Email}}<br/>
+            Password: {{item.Password}} <br/>
+           </ion-item>
     
 </ion-content>

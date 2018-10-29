@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController} from 'ionic-angular';
 import { VendedorPage } from '../vendedor/vendedor';
 import { ProductosPage} from '../productos/productos';
 
@@ -13,15 +13,29 @@ import { ProductosPage} from '../productos/productos';
  
 })
 export class RegistroPage {
+ nuevoRegistro={};
+ Registros:any=[{
+    Nombre:"",
+    Apellido:"",
+    Usuario:"",
+    Email:"",
+    Password:"",
+
+ }]
   constructor(public navCtrl: NavController) {
-    
   }
- RegistroVe(){
+  RegistroVe(){
   this.navCtrl.push(VendedorPage)
- }
- IngresoP(){
-  this.navCtrl.push(ProductosPage);
- }
+  }
+  IngresoP(){
+    this.navCtrl.push(ProductosPage);
+  }
+  
+  Registrar(){
+    this.Registros.push(this.nuevoRegistro);
+    this.nuevoRegistro={};
+
+  }
 }
 
 

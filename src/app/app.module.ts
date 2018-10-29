@@ -14,6 +14,7 @@ import { DatosEmpresaPage} from '../pages/datos-empresa/datos-empresa';
 import { CategoriaPage } from '../pages/categoria/categoria';
 import { ListPage} from  '../pages/list/list';
 import {ProductosPage } from '../pages/productos/productos';
+import {TabsPage} from '../pages/tabs/tabs';
 @NgModule({
   declarations: [
     MyApp,
@@ -25,7 +26,8 @@ import {ProductosPage } from '../pages/productos/productos';
     DatosEmpresaPage,
     CategoriaPage,
     ListPage,
-    ProductosPage
+    ProductosPage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,8 @@ import {ProductosPage } from '../pages/productos/productos';
     DatosEmpresaPage,
     CategoriaPage,
     ListPage,
-    ProductosPage
+    ProductosPage,
+    TabsPage
   ],
   providers: [
     StatusBar,

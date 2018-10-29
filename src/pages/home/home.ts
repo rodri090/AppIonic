@@ -24,7 +24,7 @@ export class HomePage {
     }
     this.menuCtrl.enable(true,'menuHome');
   }
-
+ViewChild
   ionViewDidEnter(){
     this.activarMenuHome();
   }
